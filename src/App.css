@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdecec;
+  color: #333;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+}
+
+.page, .login-page {
+  min-height: 100vh;
+  background-color: inherit;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .page,
+body.dark-mode .login-page {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+body.dark-mode .user-list li,
+body.dark-mode .stats,
+body.dark-mode .task-form,
+body.dark-mode .chart,
+body.dark-mode .recommendations {
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .green,
+body.dark-mode .pink,
+body.dark-mode .backButton,
+body.dark-mode .editBtn,
+body.dark-mode .deleteBtn {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+body.dark-mode .green:hover,
+body.dark-mode .pink:hover,
+body.dark-mode .backButton:hover,
+body.dark-mode .editBtn:hover,
+body.dark-mode .deleteBtn:hover {
+  background-color: #666;
+}
